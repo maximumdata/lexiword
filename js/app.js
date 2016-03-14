@@ -35,7 +35,7 @@ function setupBoard() {
     $(this).removeClass('selected');
   });
   word = [];
-  $('#result').html().removeClass();
+  $('#result').removeClass().html('');
   outputCurrentWordAsText();
 }
 
