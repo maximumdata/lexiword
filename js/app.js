@@ -20,6 +20,7 @@ $(document).ready(function() {
 
   $('#reset').click(function() {
     setupBoard();
+    $('#result').removeClass().html('');
   });
 });
 
@@ -35,7 +36,6 @@ function setupBoard() {
     $(this).removeClass('selected');
   });
   word = [];
-  $('#result').removeClass().html('');
   outputCurrentWordAsText();
 }
 
