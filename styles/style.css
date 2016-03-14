@@ -1,3 +1,57 @@
+* {
+  box-sizing: border-box; }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #DDD;
+  width: 100%;
+  text-align: center; }
+
+#board {
+  width: 402px;
+  border: 1px solid black;
+  margin: 0 auto; }
+  #board:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #board .tile {
+    width: 92px;
+    height: 100px;
+    margin: 4px;
+    background: #AAA;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    cursor: pointer; }
+  #board .tile.selected {
+    background: #333; }
+
+#word {
+  font-size: 2.5em; }
+  #word #output {
+    color: #80c; }
+
+.displayWord {
+  text-transform: uppercase;
+  font-weight: bold; }
+
+button {
+  padding: 5px 10px; }
+
+#result {
+  font-size: 2em; }
+
+#result.failed {
+  color: red; }
+
+#result.worked {
+  color: green; }
 
 /*# sourceMappingURL=style.css.map */

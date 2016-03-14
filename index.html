@@ -3,9 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Lexiword</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
+<h1 class="title">Lexiword</h1>
+<div class="dir">
+  Click the letters to make a word, then submit it check if it's real!
+</div>
+<div id="board">
+  <div class="tile" id="x1y1"></div>
+  <div class="tile" id="x2y1"></div>
+  <div class="tile" id="x3y1"></div>
+  <div class="tile" id="x4y1"></div>
+  <div class="tile" id="x1y2"></div>
+  <div class="tile" id="x2y2"></div>
+  <div class="tile" id="x3y2"></div>
+  <div class="tile" id="x4y2"></div>
+  <div class="tile" id="x1y3"></div>
+  <div class="tile" id="x2y3"></div>
+  <div class="tile" id="x3y3"></div>
+  <div class="tile" id="x4y3"></div>
+</div>
+<div id="word">Your word is: <span class="displayWord" id="output"></span></div>
+<button id="check">Submit Word</button>
+<button id="reset">Reset Board</button>
+<div id="result"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/app.js" charset="utf-8"></script>
 </body>
 </html>
