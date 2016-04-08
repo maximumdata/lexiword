@@ -7,7 +7,6 @@ var Letter = function(letter, pos) {
 };
 
 $(document).ready(function() {
-
   setupBoard();
 
   $('.tile').click(function(){
@@ -23,7 +22,6 @@ $(document).ready(function() {
     setupBoard();
     $('#result').removeClass().html('');
   });
-  
 });
 
 
